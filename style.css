@@ -1,0 +1,274 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  list-style-type: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #fff2df;
+}
+
+.navbar {
+  background-color: #ffb30e;
+  height: 90px;
+  font-weight: bold;
+}
+
+.navbar-brand {
+  font-size: 2rem;
+}
+
+.navbar-brand span {
+  color: black;
+}
+.navbar .nav-item {
+  font-size: 1.2rem;
+  margin-left: 30px;
+}
+
+#beranda {
+  position: relative;
+  padding-top: 90px;
+  height: 100vh;
+  background-color: #fcce29;
+}
+
+#beranda::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 50%;
+  background: linear-gradient(to top, rgba(255, 177, 6, 1), rgba(255, 177, 6, 0));
+}
+
+#beranda .row {
+  margin-top: 80px;
+}
+
+#beranda .left-content h1 {
+  font-size: 6rem;
+  font-weight: bold;
+}
+
+#beranda .left-content p {
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+.img-makanan img {
+  width: 100%;
+  height: auto;
+}
+
+#produk {
+  padding-bottom: 100px;
+}
+
+#produk h3,
+#kontak h3 {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #f17228;
+  margin-bottom: 4rem;
+  padding-top: 8rem;
+}
+
+#produk .mitra h3{
+  padding-top: 5rem;
+}
+
+#produk .product-list ul {
+  flex-wrap: wrap;
+  padding-left: 0;
+}
+
+#produk .product-list ul li {
+  width: 250px;
+  height: 150px;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 3rem;
+  margin-top: 3rem;
+}
+
+#produk .product-list ul li img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.carousel{
+  margin-top: 100px;
+}
+
+.image-section img {
+  width: 100%; 
+  height: 100%;
+  object-fit: cover;
+}
+.carousel-inner{
+  background-color: #ffca0b;
+  border-radius: 50px;
+}
+
+.text-section{
+  padding: 40px !important;
+}
+
+.text-section h2{
+  font-weight: bold;
+  font-size: 2.5rem;
+}
+.text-section p{
+  font-size: 1.2rem;
+}
+
+.carousel-indicators input[type="radio"] {
+  width: 20px;
+  height: 20px;
+  font-size: 16px;
+
+}
+
+.mitra {
+  margin-top: 5rem;
+}
+.mitra .mitra-list {
+  flex-wrap: wrap;
+  gap: 50px;
+}
+.mitra .mitra-list .mitra-card {
+  background-color: #ffff;
+  width: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 20px;
+  padding: 40px;
+  box-shadow: 5px 4px 4px 2px rgba(0, 0, 0, 0.2);
+}
+.mitra .mitra-list .mitra-card img {
+  width: 100%;
+  margin-bottom: 1rem;
+}
+.mitra .mitra-list .mitra-card h5 {
+  font-size: 2rem;
+}
+
+#kontak {
+  background-color: #fff8ee;
+  padding-bottom: 7rem;
+}
+
+#kontak p {
+  font-size: 1.6rem;
+}
+
+#kontak .contact {
+  gap: 50px;
+  flex-wrap: wrap;
+}
+#kontak .contact .contact-list {
+  width: 300px;
+  border: 1px solid #f17228;
+  border-radius: 20px;
+  overflow: hidden;
+  padding: 20px;
+}
+#kontak .contact .contact-list h4 {
+  font-size: 20px;
+  font-weight: 600;
+}
+#kontak .contact .contact-list p {
+  font-size: 1rem;
+}
+#kontak .contact .contact-list button {
+  border-radius: 50px;
+  padding: 7px 20px;
+  font-size: 16px;
+  background-color: #ffca0b;
+  color: white;
+  border: 0;
+}
+
+#tentang-kami h3 {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #f17228;
+  padding-top: 8rem;
+  margin-bottom: 50px;
+}
+
+#tentang-kami h1 {
+  font-size: 5rem;
+  font-weight: bold;
+  width: 100px;
+}
+
+#tentang-kami p {
+  font-weight: 400;
+}
+
+footer {
+  background-color: #ffb30e;
+  margin-top: 5rem;
+}
+footer .container {
+  height: 100px;
+  display: flex;
+  align-items: center;
+}
+footer ul {
+  margin-bottom: 0;
+}
+footer ul li {
+  width: 40px;
+  height: 44px;
+  text-align: center;
+  line-height: 44px;
+  color: white;
+}
+footer ul li {
+  transition: 0.3s ease;
+}
+
+footer ul li:hover:nth-child(1) {
+  background-color: rgb(195, 42, 163);
+}
+footer ul li:hover:nth-child(2) {
+  background-color: rgb(0, 0, 0);
+}
+
+@media (max-width: 1366px) {
+  html {
+    font-size: 75%;
+  }
+}
+
+/* Tablet */
+@media (max-width: 758px) {
+  html {
+    font-size: 62.5%;
+  }
+}
+
+@media (max-width: 450px) {
+  html {
+    font-size: 55%;
+  }
+  .navbar{
+    height: 60px;
+  }
+  footer .container{
+    height: 60px;
+  }
+}
